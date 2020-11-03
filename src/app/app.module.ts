@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TestOperationComponent } from './test-operation/test-operation.component';
+import { CustomTableIzModule } from "custom-table-iz";
+import { TestLibraryComponent } from './test-library/test-library.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TestOperationComponent,
+    TestLibraryComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CustomTableIzModule
   ],
   providers: [],
   bootstrap: [AppComponent]
